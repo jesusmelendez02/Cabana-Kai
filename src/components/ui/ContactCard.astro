@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+export interface Props {
+  icon: string | ImageMetadata;
+  alt?: string;
+  label: string;
+  value: string;
+  href?: string;
+}
+
+const { icon, alt = "", label, value, href } = Astro.props;
+const isAstroImage = typeof icon !== "string";
+---
+
+<li role="listitem" class="bg-softSand p-8 rounded-3xl shadow-card">
+  <div class="flex items-center gap-5">
+    {
+      isAstroImage ? (
+        <Image
+          src={icon as ImageMetadata}
+          alt={alt}
+          loading="lazy"
+          width={48}
+          height={48}
+          class="w-12 h-12 shrink-0"
+        />
+      ) : (
+        <img
+          src={icon as string}
+          alt={alt}
+          loading="lazy"
+          class="w-12 h-12 shrink-0"
+        />
+      )
+    }
+
+    <div>
+      <p
+        class="font-accent font-bold uppercase text-lg tracking-wider text-deepNavy"
+      >
+        {label}:
+      </p>
+
+      {
+        href ? (
+          <p>
+            <a href={href} class="text-coconutShell underline">
+              {value}
+            </a>
+          </p>
+        ) : (
+          <p class="text-coconutShell text-lg">{value}</p>
+        )
+      }
+    </div>
+  </div>
+</li>

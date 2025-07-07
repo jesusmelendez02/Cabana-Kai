@@ -1,0 +1,75 @@
+---
+import ContactCard from "../components/ui/ContactCard.astro";
+import location from "../assets/icons/location-alt.svg";
+import instagram from "../assets/icons/instagram.svg";
+import phone from "../assets/icons/phone.svg";
+import email from "../assets/icons/email.svg";
+---
+
+<section
+  id="contact"
+  aria-labelledby="contact-title"
+  class="py-16 px-4 bg-goldenSun"
+>
+  <div class="max-w-3xl mx-auto">
+    <h2 class="sr-only">Contact Information</h2>
+
+    <p class="font-heading text-center text-[2.5rem]/13 tracking-wider mb-10">
+      Let’s plan your beach day
+    </p>
+
+    <ul role="list" class="grid md:grid-cols-2 gap-5">
+      <ContactCard
+        icon={location.src}
+        alt="Location icon"
+        label="Location"
+        value="Sarasota & Anna Maria"
+      />
+
+      <ContactCard
+        icon={instagram.src}
+        alt="Instagram icon"
+        label="Instagram"
+        value="@cabana.kai"
+        href="https://instagram.com/cabana.kai"
+      />
+
+      <ContactCard
+        icon={phone.src}
+        alt="Phone icon"
+        label="Call or Text"
+        value="(321) 947-4253"
+        href="tel:13219474253"
+      />
+
+      <ContactCard
+        icon={email.src}
+        alt="Email icon"
+        label="Email"
+        value="relax@cabanakairentals.com"
+        href="mailto:relax@cabanakairentals.com"
+      />
+    </ul>
+
+    <div class="mt-10">
+      <a
+        href="https://instagram.com/cabana.kai"
+        target="_blank"
+        rel="noopener"
+        class="inline-block w-full px-6 py-5 rounded-3xl text-center font-accent font-bold uppercase text-base bg-seafoamMint text-deepNavy md:text-"
+      >
+        Book your beach day on Instagram
+      </a>
+
+      <p class="text-sm italic text-center mt-2 font-semibold text-deepNavy">
+        We respond quickly! Reach out by text, DM, or email, whatever works for
+        you.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div
+  class="bg-[url(../assets/images/cabana-sunset-side-backlit.jpg)] imageDivider mt-0"
+>
+</div>

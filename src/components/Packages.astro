@@ -1,0 +1,43 @@
+---
+import PackageCard from "../components/ui/PackageCard.astro";
+import sombrillitaImage from "../assets/images/cabana-sombrillita-setup-side.jpg";
+import toldoImage from "../assets/images/cabana-setup-full-cabana-front.jpg";
+import churuataImage from "../assets/images/cabana-setup-wide-front.jpg";
+---
+
+<section
+  id="packages"
+  aria-labelledby="packages-heading"
+  class="px-4 bg-sandyBeige pb-10"
+>
+  <div class="mx-auto">
+    <h2 class="text-center mb-10">Choose Your Perfect Beach Setup</h2>
+    <div class="container mx-auto grid gap-8 md:grid-cols-3">
+      <PackageCard
+        imageSrc={sombrillitaImage}
+        imageAlt=""
+        title="Sombrillita"
+        shadeType="Fringed Umbrella"
+        perfectFor="Couples & solo escapes"
+        price="$175"
+        color="sunsetOrange"
+      />
+      <PackageCard
+        imageSrc={toldoImage}
+        imageAlt=""
+        title="Toldo"
+        shadeType="Classic Cabana"
+        perfectFor="Families, more shade"
+        price="$200"
+      />
+      <PackageCard
+        imageSrc={churuataImage}
+        imageAlt=""
+        title="Churuata"
+        shadeType="Custom (Cabana+)"
+        perfectFor="Groups, celebrations"
+        price="Contact"
+      />
+    </div>
+  </div>
+</section>

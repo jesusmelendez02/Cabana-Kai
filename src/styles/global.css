@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'SK Moralist';
+    src: url('/fonts/SKMoralist-Regular.woff2') format('woff2'),
+         url('/fonts/SKMoralist-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+@import "tailwindcss";
+
+
+@theme {
+    /* 🌴 Colors */
+    --color-softSand: #FAF5EC;
+    --color-linenWhite: #FFFDF7;
+    --color-sandyBeige: #F5E2C6;
+    --color-goldenSun: #FFDB91;
+    --color-coconutShell: #3A2D26;
+    --color-sunsetOrange: #F1731F;
+    --color-deepNavy: #13215A;
+    --color-seafoamMint: #D6F5F2;
+    --color-oceanBlue: #4CA0C6;
+  
+    /* 🌊 Typography */
+    --font-heading: "SK Moralist", serif;
+    --font-accent: "Space Mono", monospace;
+    --font-body: "Nunito", sans-serif;
+  
+    /* 🎨 Shadows (optional, semantic) */
+    --shadow-soft: 0 2px 6px rgba(0, 0, 0, 0.06);
+    --shadow-card: 0 6px 20px rgba(0, 0, 0, 0.08);
+  
+    /* 📐 Spacing (optional) */
+    --space-section: 6rem;
+    --space-card-padding: 1.5rem;
+  }
+
+  @layer base {
+    h1 {
+        @apply font-heading capitalize text-4xl md:text-7xl
+    }
+
+    h2 {
+        @apply font-heading text-[2.5rem]/13 tracking-wider mb-10 text-deepNavy text-center md:text-[3.375rem]
+    }
+
+    h3 {
+      @apply font-accent font-bold text-lg uppercase tracking-wider
+    }
+
+    body {
+        @apply font-body
+    }
+
+    section {
+      @apply py-20 px-5 md:py-20 md:px-32
+    }
+  }
+
+  @layer components {
+    .imageDivider {
+      @apply  bg-fixed bg-center bg-cover aspect-[4/3]  mt-10 w-screen relative left-1/2 right-1/2 -mx-[50vw] md:aspect-[16/6]
+    }
+
+  }

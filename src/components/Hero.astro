@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+import logo from "@images/CK.SINFONDO-250X210PX.png";
+---
+
+<section id="hero" class="py-0 px-0">
+  <div
+    class="flex flex-col h-screen w-screen text-center bg-[url(../assets/images/cabana-setup-back-full-sunny.jpg)] md:bg-[url(../assets/images/cabana-setup-full-back-view.jpg)] bg-fixed bg-cover justify-center"
+  >
+    <Image
+      src={logo}
+      alt="Cabana Kai Logo"
+      loading="eager"
+      class="absolute right-1/2 translate-x-1/2 w-30 top-5 md:w-60 md:left-auto md:-translate-x-0 md:right-20"
+    />
+    <div
+      class="p-8 mx-5 bg-linenWhite/70 rounded-3xl md:max-w-7/12 md:self-center md:justify-self-center"
+    >
+      <h1>Beach moments, curated with love!</h1>
+      <p class="font-accent font-bold uppercase text-coconutShell md:text-2xl">
+        Luxury Cabana & Umbrella Beach Rentals for families, couples, and groups
+        in Sarasota & Anna Maria.
+      </p>
+    </div>
+  </div>
+</section>

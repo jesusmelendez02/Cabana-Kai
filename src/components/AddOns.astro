@@ -1,0 +1,68 @@
+---
+import AddOnCard from "../components/ui/AddOnCard.astro";
+import games from "../assets/icons/games.svg";
+import floaties from "../assets/icons/floaties.svg";
+import brunch from "../assets/icons/brunch.svg";
+import coconut from "../assets/icons/coconut.svg";
+import flowers from "../assets/icons/flowers.svg";
+---
+
+<div
+  class="bg-[url(../assets/images/cabana-sunset-back-closeup.jpg)] imageDivider mt-0 bg-right"
+>
+</div>
+
+<section
+  id="addons"
+  aria-labelledby="addons-heading"
+  class="bg-linenWhite animate-fade-up animate-once animate-duration-700"
+>
+  <div>
+    <h2 class="text-center  font-bold mb-10">
+      Want more magic? We got ya!
+    </h2>
+
+    <ul class="grid gap-5 justify-center">
+      <li class="animate-fade-up animate-delay-[100ms] animate-once">
+        <AddOnCard
+          icon={games}
+          alt="Game icon"
+          name="Beach games (Cornhole, Spike Ball, Paddleball)"
+          price="$25 EACH"
+        />
+      </li>
+      <li class="animate-fade-up animate-delay-[200ms] animate-once">
+        <AddOnCard
+          icon={floaties}
+          alt="Floatie icon"
+          name="Inflatable floaties"
+          price="$25"
+        />
+      </li>
+      <li class="animate-fade-up animate-delay-[300ms] animate-once">
+        <AddOnCard
+          icon={brunch}
+          alt="Brunch icon"
+          name="Brunch box / charcuterie board"
+          price="$50–$75"
+        />
+      </li>
+      <li class="animate-fade-up animate-delay-[400ms] animate-once">
+        <AddOnCard
+          icon={coconut}
+          alt="Coconut icon"
+          name="Coconut water delivery (fresh cracked) cheers"
+          price="$20 EACH"
+        />
+      </li>
+      <li class="animate-fade-up animate-delay-[500ms] animate-once">
+        <AddOnCard
+          icon={flowers}
+          alt="Flower icon"
+          name="Flower arrangement / sign for celebrations"
+          price="$25 - TBD"
+        />
+      </li>
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,61 @@
+---
+import StepCard from "../components/ui/StepCard.astro";
+import calendar from "../assets/icons/calendar.svg";
+import location from "../assets/icons/location.svg";
+import umbrella from "../assets/icons/umbrella.svg";
+import arrow from "../assets/icons/arrow.svg";
+import { Image } from "astro:assets";
+---
+
+<section
+  id="how-it-works"
+  aria-labelledby="how-it-works-heading"
+  class="bg-softSand py-0"
+>
+  <div class="py-20 mx-auto text-center">
+    <h2>Show up. Relax. We handle everything.</h2>
+    <div class="flex flex-col gap-5 md:flex-row">
+      <StepCard
+        icon={calendar}
+        alt="Calendar icon"
+        title="Book Your Date"
+        description="DM or call us — pick your package"
+        className="animate-fade-up animate-delay-300 animate-once"
+      />
+
+      <Image
+        src={arrow}
+        alt=""
+        class="h-8 self-center md:rotate-270 animate-bounce"
+        aria-hidden="true"
+      />
+
+      <StepCard
+        icon={location}
+        alt="Anchor icon"
+        title="Arrive at the Beach"
+        description="Your curated setup will be waiting"
+        className="animate-fade-up animate-delay-600 animate-once"
+      />
+
+      <Image
+        src={arrow}
+        alt=""
+        class="h-8 self-center md:rotate-270 animate-bounce"
+        aria-hidden="true"
+      />
+
+      <StepCard
+        icon={umbrella}
+        alt="Umbrella icon"
+        title="Enjoy Effortless Shade, Style & Service"
+        description="All you have to do is make memories"
+        className="animate-fade-up animate-delay-900 animate-once"
+      />
+    </div>
+  </div>
+</section>
+ <div
+    class="bg-[url(../assets/images/cabana-detail-cooler-sunscreen-angle.jpg)] imageDivider mt-0"
+  >
+  </div>

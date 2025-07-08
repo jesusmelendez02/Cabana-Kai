@@ -1,35 +1,34 @@
 ---
-import ContactCard from "../components/ui/ContactCard.astro";
-import location from "../assets/icons/location-alt.svg";
-import instagram from "../assets/icons/instagram.svg";
-import phone from "../assets/icons/phone.svg";
-import email from "../assets/icons/email.svg";
+import ContactCard from "@ui/ContactCard.astro";
+import location from "@icons/location-alt.svg";
+import instagram from "@icons/instagram.svg";
+import phone from "@icons/phone.svg";
+import email from "@icons/email.svg";
 ---
 
 <section
   id="contact"
   aria-labelledby="contact-title"
-  class="py-16 px-4 bg-goldenSun animate-fade-up animate-scale animate-duration-500 animate-once"
+  class="py-16 px-4 bg-goldenSun"
 >
-  <div class="max-w-3xl mx-auto">
+  <div
+    class="max-w-3xl mx-auto opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once md:intersect-half animate-delay-[100ms] transition-opacity duration-500"
+  >
     <h2 class="sr-only">Contact Information</h2>
 
     <p
-      class="font-heading text-center text-[2.5rem]/13 tracking-wider mb-10 animate-fade-up animate-delay-100 animate-once"
+      class="font-heading text-[2.5rem]/13 tracking-wider mb-10 text-deepNavy text-center md:text-[3.375rem] 0 opacity-0  intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[200ms] transition-opacity duration-500"
     >
       Let’s plan your beach day
     </p>
 
-    <ul
-      role="list"
-      class="grid md:grid-cols-2 gap-5 animate-fade-up animate-delay-200 animate-once"
-    >
+    <ul role="list" class="grid md:grid-cols-2 gap-5">
       <ContactCard
         icon={location.src}
         alt="Location icon"
         label="Location"
         value="Sarasota & Anna Maria"
-        className="animate-fade-up animate-scale animate-delay-300 animate-once"
+        className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[300ms] transition-opacity duration-500"
       />
 
       <ContactCard
@@ -38,7 +37,7 @@ import email from "../assets/icons/email.svg";
         label="Instagram"
         value="@cabana.kai"
         href="https://instagram.com/cabana.kai"
-        className="animate-fade-up animate-scale animate-delay-400 animate-once"
+        className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[400ms] transition-opacity duration-500"
       />
 
       <ContactCard
@@ -47,7 +46,7 @@ import email from "../assets/icons/email.svg";
         label="Call or Text"
         value="(321) 947-4253"
         href="tel:13219474253"
-        className="animate-fade-up animate-scale animate-delay-500 animate-once"
+        className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[500ms] transition-opacity duration-500"
       />
 
       <ContactCard
@@ -56,23 +55,23 @@ import email from "../assets/icons/email.svg";
         label="Email"
         value="relax@cabanakairentals.com"
         href="mailto:relax@cabanakairentals.com"
-        className="animate-fade-up animate-scale animate-delay-600 animate-once"
+        className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[600ms] transition-opacity duration-500"
       />
     </ul>
 
-    <div class="mt-10 text-center">
+    <div
+      class="mt-10 text-center opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[700ms] transition-opacity duration-500"
+    >
       <a
         href="https://instagram.com/cabana.kai"
         target="_blank"
         rel="noopener"
-        class="inline-block w-full px-6 py-5 rounded-3xl text-center font-accent font-bold uppercase text-base bg-seafoamMint text-deepNavy hover:bg-oceanBlue hover:text-linenWhite transition-colors duration-300 shadow-md hover:shadow-lg animate-fade-up animate-delay-700 animate-once"
+        class="inline-block w-full px-6 py-5 rounded-3xl text-center font-accent font-bold uppercase text-base bg-seafoamMint text-deepNavy hover:bg-oceanBlue hover:text-linenWhite transition-colors duration-300 shadow-md hover:shadow-lg"
       >
         Book your beach day on Instagram
       </a>
 
-      <p
-        class="text-sm italic mt-2 font-semibold text-deepNavy animate-fade-up animate-delay-800 animate-once"
-      >
+      <p class="text-sm italic mt-2 font-semibold text-deepNavy">
         We respond quickly! Reach out by text, DM, or email, whatever works for
         you.
       </p>

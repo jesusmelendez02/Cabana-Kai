@@ -1,22 +1,22 @@
 ---
-import PolicyCard from "../components/ui/PolicyCard.astro";
-import bookingIcon from "../assets/icons/payment.svg";
-import cancelIcon from "../assets/icons/cancellation.svg";
-import weatherIcon from "../assets/icons/weather.svg";
-import equipmentIcon from "../assets/icons/equipment.svg";
+import PolicyCard from "@ui/PolicyCard.astro";
+import bookingIcon from "@icons/payment.svg";
+import cancelIcon from "@icons/cancellation.svg";
+import weatherIcon from "@icons/weather.svg";
+import equipmentIcon from "@icons/equipment.svg";
 ---
 
 <section
   id="policies"
   aria-labelledby="policies-title"
-  class="bg-sandyBeige animate-fade-up animate-delay-0 animate-once"
+  class="bg-sandyBeige py-20"
 >
-  <div>
-    <h2 class="animate-fade-up animate-delay-100 animate-once">
-      Before you book, here’s what to know:
-    </h2>
+  <div
+    class="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once md:intersect-half animate-delay-[100ms] transition-opacity duration-500"
+  >
+    <h2 class="text-center mb-10">Before you book, here’s what to know:</h2>
 
-    <div class="flex flex-row flex-wrap justify-center gap-5" role="list">
+    <div class="flex flex-row flex-wrap justify-center gap-5 2xl:max-w-6xl 2xl:mx-auto" role="list">
       <PolicyCard
         icon={bookingIcon}
         alt="Booking icon"
@@ -25,7 +25,7 @@ import equipmentIcon from "../assets/icons/equipment.svg";
           "Reservations are confirmed once payment is received in full.",
           "We recommend booking at least 48 hours in advance.",
         ]}
-        className="animate-fade-up animate-scale animate-delay-200 animate-once"
+        className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[200ms] transition-opacity duration-500"
       />
 
       <PolicyCard
@@ -37,7 +37,7 @@ import equipmentIcon from "../assets/icons/equipment.svg";
           "Once setup is in progress or complete, no refunds will be issued.",
           "We may adjust or lower the setup due to high winds (20+ mph).",
         ]}
-        className="animate-fade-up animate-scale animate-delay-300 animate-once"
+        className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[300ms] transition-opacity duration-500"
       />
 
       <PolicyCard
@@ -49,7 +49,7 @@ import equipmentIcon from "../assets/icons/equipment.svg";
           "Less than 48 hours = $75 fee.",
           "No-shows are non-refundable.",
         ]}
-        className="animate-fade-up animate-scale animate-delay-400 animate-once"
+        className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[400ms] transition-opacity duration-500"
       />
 
       <PolicyCard
@@ -61,7 +61,7 @@ import equipmentIcon from "../assets/icons/equipment.svg";
           "Avoid placing wet or sandy items directly on towels or cushions.",
           "Lost/damaged items may result in a replacement fee.",
         ]}
-        className="animate-fade-up animate-scale animate-delay-500 animate-once"
+        className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[500ms] transition-opacity duration-500"
       />
     </div>
   </div>

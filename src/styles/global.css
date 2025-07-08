@@ -10,6 +10,7 @@
 
 @import "tailwindcss";
 @import "tailwindcss-animated";
+@import "tailwindcss-intersect";
 
 @theme {
     /* 🌴 Colors */
@@ -39,7 +40,7 @@
 
   @layer base {
     h1 {
-        @apply font-heading capitalize text-4xl md:text-7xl
+        @apply font-heading capitalize text-4xl md:text-7xl text-deepNavy
     }
 
     h2 {
@@ -47,7 +48,7 @@
     }
 
     h3 {
-      @apply font-accent font-bold text-lg uppercase tracking-wider
+      @apply font-accent font-bold text-lg uppercase tracking-wider text-deepNavy
     }
 
     body {
@@ -55,7 +56,7 @@
     }
 
     section {
-      @apply py-20 px-5 md:py-20 md:px-32
+      @apply py-20 px-5 md:py-28 md:px-32 2xl:py-32 2xl:px-56 
     }
   }
 

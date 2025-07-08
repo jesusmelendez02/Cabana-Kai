@@ -1,17 +1,20 @@
 ---
-import PackageCard from "../components/ui/PackageCard.astro";
-import sombrillitaImage from "../assets/images/cabana-sombrillita-setup-side.jpg";
-import toldoImage from "../assets/images/cabana-setup-full-cabana-front.jpg";
-import churuataImage from "../assets/images/cabana-setup-wide-front.jpg";
+import PackageCard from "@ui/PackageCard.astro";
+import sombrillitaImage from "@images/cabana-sombrillita-setup-side.jpg";
+import toldoImage from "@images/cabana-setup-full-cabana-front.jpg";
+import churuataImage from "@images/cabana-setup-wide-front.jpg";
 ---
 
 <section
   id="packages"
   aria-labelledby="packages-heading"
-  class=" bg-sandyBeige pb-10"
+  class="bg-sandyBeige pb-10"
 >
-  <div class="mx-auto">
+  <div
+    class="mx-auto opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once  md:intersect-half animate-delay-[200ms] transition-opacity duration-500"
+  >
     <h2 class="text-center mb-10">Choose Your Perfect Beach Setup</h2>
+
     <div class="container mx-auto grid gap-8 md:grid-cols-3">
       <PackageCard
         imageSrc={sombrillitaImage}
@@ -21,7 +24,7 @@ import churuataImage from "../assets/images/cabana-setup-wide-front.jpg";
         perfectFor="Couples & solo escapes"
         price="$175"
         color="sunsetOrange"
-        className="animate-fade-up animate-scale animate-delay-300 animate-once"
+        className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[500ms] transition-opacity duration-500"
       />
       <PackageCard
         imageSrc={toldoImage}
@@ -30,7 +33,7 @@ import churuataImage from "../assets/images/cabana-setup-wide-front.jpg";
         shadeType="Classic Cabana"
         perfectFor="Families, more shade"
         price="$200"
-        className="animate-fade-up animate-scale animate-delay-600 animate-once"
+        className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[700ms] transition-opacity duration-500"
       />
       <PackageCard
         imageSrc={churuataImage}
@@ -39,7 +42,7 @@ import churuataImage from "../assets/images/cabana-setup-wide-front.jpg";
         shadeType="Custom (Cabana+)"
         perfectFor="Groups, celebrations"
         price="Contact"
-        className="animate-fade-up animate-scale animate-delay-900 animate-once"
+        className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[900ms] transition-opacity duration-500"
       />
     </div>
   </div>

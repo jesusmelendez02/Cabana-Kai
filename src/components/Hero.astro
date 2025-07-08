@@ -5,28 +5,30 @@ import logo from "@images/CK.SINFONDO-250X210PX.png";
 
 <section id="hero" class="py-0 px-0 overflow-hidden">
   <div
-    class="flex flex-col h-screen w-screen text-center bg-[url(../assets/images/cabana-setup-back-full-sunny.jpg)] md:bg-[url(../assets/images/cabana-setup-full-back-view.jpg)] bg-fixed bg-cover justify-center items-center animate-scale animate-duration-1000 animate-ease-out"
+    class="flex flex-col h-screen w-screen text-center bg-[url(../assets/images/cabana-setup-back-full-sunny.jpg)] md:bg-[url(../assets/images/cabana-setup-full-back-view.jpg)] bg-fixed bg-cover justify-center items-center intersect:animate-scale intersect-once animate-duration-1000 animate-ease-out"
   >
     <!-- Logo with optional hover scale -->
     <Image
       src={logo}
       alt="Cabana Kai Logo"
       loading="eager"
-      class="absolute right-1/2 translate-x-1/2 w-30 top-5 md:w-50 md:left-auto md:-translate-x-0 md:right-20 animate-fade-down animate-delay-[200ms] hover:scale-105 transition-transform duration-300 ease-out"
+      class="absolute right-1/2 translate-x-1/2 w-30 top-5 md:w-50 md:left-auto md:-translate-x-0 md:right-20 intersect:animate-fade-down intersect-once animate-delay-[200ms] hover:scale-105 transition-transform duration-300 ease-out"
     />
 
     <!-- Overlay Card -->
     <div
-      class="mx-5 p-8 bg-linenWhite/70 rounded-3xl md:flex md:flex-col md:gap-5 md:max-w-7/12 md:items-center md:py-10 animate-fade-up animate-scale animate-delay-[500ms] animate-ease-out"
+      class="mx-5 p-8 bg-linenWhite/70 rounded-3xl md:flex md:flex-col md:gap-5 md:max-w-7/12 md:items-center md:py-10 intersect:animate-fade-up intersect:animate-scale intersect-once animate-delay-[500ms] animate-ease-out"
     >
       <!-- Headline -->
-      <h1 class=" animate-fade-up animate-delay-[700ms] animate-ease-out">
+      <h1
+        class="intersect:animate-fade-up intersect-once animate-delay-[700ms] animate-ease-out"
+      >
         Beach moments, curated with love!
       </h1>
 
       <!-- Subheadline -->
       <p
-        class="font-accent font-bold uppercase text-coconutShell md:text-2xl md:max-w-10/12 animate-fade-up animate-delay-[900ms] animate-ease-out"
+        class="font-accent font-bold uppercase text-coconutShell md:text-2xl md:max-w-10/12 intersect:animate-fade-up intersect-once animate-delay-[900ms] animate-ease-out"
       >
         Luxury Cabana & Umbrella Beach Rentals for families, couples, and groups
         in Sarasota & Anna Maria.

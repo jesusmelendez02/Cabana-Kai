@@ -1,9 +1,9 @@
 ---
-import StepCard from "../components/ui/StepCard.astro";
-import calendar from "../assets/icons/calendar.svg";
-import location from "../assets/icons/location.svg";
-import umbrella from "../assets/icons/umbrella.svg";
-import arrow from "../assets/icons/arrow.svg";
+import StepCard from "@components/ui/StepCard.astro";
+import calendar from "@icons/calendar.svg";
+import location from "@icons/location.svg";
+import umbrella from "@icons/umbrella.svg";
+import arrow from "@icons/arrow.svg";
 import { Image } from "astro:assets";
 ---
 
@@ -12,15 +12,22 @@ import { Image } from "astro:assets";
   aria-labelledby="how-it-works-heading"
   class="bg-softSand py-0"
 >
-  <div class="py-20 mx-auto text-center">
-    <h2>Show up. Relax. We handle everything.</h2>
-    <div class="flex flex-col gap-5 md:flex-row">
+  <div
+    class="py-20 mx-auto text-center opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once md:intersect-half animate-delay-[300ms] transition-opacity duration-500"
+  >
+    <h2
+      class="mb-10 opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once md:intersect-half animate-delay-[300ms] transition-opacity duration-500"
+    >
+      Show up. Relax. We handle everything.
+    </h2>
+
+    <div class="flex flex-col gap-5 md:flex-row justify-center">
       <StepCard
         icon={calendar}
         alt="Calendar icon"
         title="Book Your Date"
         description="DM or call us — pick your package"
-        className="animate-fade-up animate-delay-300 animate-once"
+        className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[600ms] transition-opacity duration-500"
       />
 
       <Image
@@ -35,7 +42,7 @@ import { Image } from "astro:assets";
         alt="Anchor icon"
         title="Arrive at the Beach"
         description="Your curated setup will be waiting"
-        className="animate-fade-up animate-delay-600 animate-once"
+        className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[900ms] transition-opacity duration-500"
       />
 
       <Image
@@ -50,12 +57,13 @@ import { Image } from "astro:assets";
         alt="Umbrella icon"
         title="Enjoy Effortless Shade, Style & Service"
         description="All you have to do is make memories"
-        className="animate-fade-up animate-delay-900 animate-once"
+        className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[1200ms] transition-opacity duration-500"
       />
     </div>
   </div>
 </section>
- <div
-    class="bg-[url(../assets/images/cabana-detail-cooler-sunscreen-angle.jpg)] imageDivider mt-0"
-  >
-  </div>
+
+<div
+  class="bg-[url(../assets/images/cabana-detail-cooler-sunscreen-angle.jpg)] imageDivider mt-0"
+>
+</div>

@@ -1,17 +1,16 @@
 ---
-import IncludedItem from "../components/ui/IncludedItem.astro";
+import IncludedItem from "@ui/IncludedItem.astro";
 
-import fringedUmbrella from "../assets/icons/fringedUmbrella.svg";
-import chairs from "../assets/icons/chairs.svg";
-import cooler from "../assets/icons/cooler.svg";
-import towel from "../assets/icons/towel.svg";
-import speaker from "../assets/icons/speaker.svg";
-import sunscreen from "../assets/icons/sunscreen.svg";
-import trash from "../assets/icons/trash.svg";
-import setup from "../assets/icons/setup.svg";
-// import seahorse from "@icons/seahorse.svg";
+import fringedUmbrella from "@icons/fringedUmbrella.svg";
+import chairs from "@icons/chairs.svg";
+import cooler from "@icons/cooler.svg";
+import towel from "@icons/towel.svg";
+import speaker from "@icons/speaker.svg";
+import sunscreen from "@icons/sunscreen.svg";
+import trash from "@icons/trash.svg";
+import setup from "@icons/setup.svg";
 import fish from "@icons/fish.svg";
-// import lobster from "@icons/lobster.svg"
+
 import { Image } from "astro:assets";
 ---
 
@@ -20,7 +19,9 @@ import { Image } from "astro:assets";
   aria-labelledby="included-heading"
   class="bg-sandyBeige space-y-10 pt-0"
 >
-  <div class="flex justify-center">
+  <div
+    class="flex justify-center opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once md:intersect-half animate-delay-[100ms] transition-opacity duration-500"
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="1040"
@@ -35,7 +36,7 @@ import { Image } from "astro:assets";
   </div>
 
   <div
-    class="bg-linenWhite rounded-3xl p-8 shadow-card animate-fade-up animate-once animate-duration-700"
+    class="bg-linenWhite rounded-3xl p-8 shadow-card opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[200ms] transition-opacity duration-500"
   >
     <h2
       class="text-2xl md:text-4xl font-accent font-bold uppercase text-deepNavy md:text-left"
@@ -48,54 +49,54 @@ import { Image } from "astro:assets";
           icon={fringedUmbrella}
           alt="Umbrella or cabana icon"
           label="Fringed umbrella or cabana"
-          className="animate-fade-up animate-delay-[200ms] animate-once"
+          className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[300ms] transition-opacity duration-500"
         />
         <IncludedItem
           icon={chairs}
           alt="Beach chairs icon"
           label="2 luxury Beach chairs"
-          className="animate-fade-up animate-delay-[300ms] animate-once"
+          className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[400ms] transition-opacity duration-500"
         />
         <IncludedItem
           icon={cooler}
           alt="Cooler icon"
           label="Cooler with ice & 4 cold water"
-          className="animate-fade-up animate-delay-[400ms] animate-once"
+          className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[500ms] transition-opacity duration-500"
         />
         <IncludedItem
           icon={towel}
           alt="Towel icon"
           label="Deluxe towel + woven floor blanket"
-          className="animate-fade-up animate-delay-[500ms] animate-once"
+          className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[600ms] transition-opacity duration-500"
         />
         <IncludedItem
           icon={speaker}
           alt="Speaker icon"
           label="Bluetooth speaker"
-          className="animate-fade-up animate-delay-[600ms] animate-once"
+          className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[700ms] transition-opacity duration-500"
         />
         <IncludedItem
           icon={sunscreen}
           alt="Sunscreen icon"
           label="Sunscreen"
-          className="animate-fade-up animate-delay-[700ms] animate-once"
+          className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[800ms] transition-opacity duration-500"
         />
         <IncludedItem
           icon={trash}
           alt="Trash icon"
           label="Trash removal"
-          className="animate-fade-up animate-delay-[800ms] animate-once"
+          className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[900ms] transition-opacity duration-500"
         />
         <IncludedItem
           icon={setup}
           alt="Setup icon"
           label="Setup & takedown service."
-          className="animate-fade-up animate-delay-[900ms] animate-once"
+          className="opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[1000ms] transition-opacity duration-500"
         />
       </ul>
 
       <div
-        class="self-center justify-self-center md:w-full animate-fade-up animate-delay-[1000ms] animate-once"
+        class="self-center justify-self-center md:w-full opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[1100ms] transition-opacity duration-500"
       >
         <Image
           src={fish}
@@ -106,7 +107,9 @@ import { Image } from "astro:assets";
     </div>
   </div>
 
-  <div class="flex justify-center">
+  <div
+    class="flex justify-center opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[100ms] transition-opacity duration-500"
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="1040"
@@ -122,7 +125,7 @@ import { Image } from "astro:assets";
 
   <div class="flex md:justify-center">
     <p
-      class="p-8 rounded-3xl bg-goldenSun text-center text-sm font-bold text-deepNavy shadow-card animate-fade-up animate-delay-[1200ms] animate-once"
+      class="p-8 rounded-3xl bg-goldenSun text-center text-sm font-bold text-deepNavy shadow-card opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[1200ms] transition-opacity duration-500"
     >
       3-hour minimum per booking. Add-ons starting at $20.
     </p>

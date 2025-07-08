@@ -4,6 +4,7 @@ import shell from "../assets/icons/shell.svg";
 import aboutUsImage from "../assets/images/cabana-service-cart-to-beach.jpg";
 ---
 
+<!-- Divider Image with Intersect -->
 <div
   class="bg-[url(../assets/images/cabana-detail-cooler-sunscreen-speaker.jpg)] imageDivider mt-0"
 >
@@ -11,23 +12,27 @@ import aboutUsImage from "../assets/images/cabana-service-cart-to-beach.jpg";
 
 <section id="about" aria-labelledby="about-heading" class="bg-softSand">
   <div
-    class="grid md:grid-cols-2 gap-10 md:gap-20 animate-fade-up animate-delay-100 animate-once"
+    class="flex flex-col md:flex-row items-stretch gap-10 md:gap-20 2xl:gap-40 2xl:py-4
+         opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once md:intersect-half
+         animate-delay-[200ms] transition-opacity duration-500"
   >
     <!-- Left column (text) -->
-    <div class="mx-auto md:grid content-between">
-      <div class="flex items-center gap-4">
-        <h2 class="md:text-left animate-fade-up animate-delay-100 animate-once">
+    <div class="mx-auto  md:grid md:content-between">
+      <div class=" items-center gap-4 md:flex">
+        <h2
+          class="md:text-left opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[300ms] transition-opacity duration-500"
+        >
           Inspired by the sea. Created for ease.
         </h2>
         <Image
           src={shell}
           alt="Shell icon"
-          class="mx-auto mb-10 md:w-36 animate-fade-up animate-delay-200 animate-once"
+          class="mx-auto mb-10 md:w-36 opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[400ms] transition-opacity duration-500"
         />
       </div>
 
       <div
-        class="space-y-5 text-lg text-coconutShell leading-relaxed animate-fade-up animate-delay-300 animate-once"
+        class="space-y-5 text-lg text-coconutShell leading-relaxed opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[500ms] transition-opacity duration-500"
       >
         <p>
           Cabana Kai was created with one simple goal:
@@ -58,7 +63,9 @@ import aboutUsImage from "../assets/images/cabana-service-cart-to-beach.jpg";
         </p>
       </div>
 
-      <div class="mt-10 animate-fade-up animate-delay-400 animate-once">
+      <div
+        class="mt-10 opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[600ms] transition-opacity duration-500"
+      >
         <p class="font-accent uppercase font-bold text-lg text-sunsetOrange">
           With heart and sunshine,
         </p>
@@ -71,7 +78,7 @@ import aboutUsImage from "../assets/images/cabana-service-cart-to-beach.jpg";
     <Image
       src={aboutUsImage}
       alt="Family carting cabana gear to the beach"
-      class="rounded-3xl shadow-md animate-fade-up animate-delay-500 animate-once transition-transform duration-300 hover:scale-[1.03] hover:shadow-lg"
+      class="max-h-[780px] object-cover rounded-3xl shadow-md opacity-0 intersect:opacity-100 intersect:animate-fade-up intersect-once intersect-half animate-delay-[700ms] transition-opacity duration-500 hover:scale-[1.03] hover:shadow-lg"
     />
   </div>
 </section>

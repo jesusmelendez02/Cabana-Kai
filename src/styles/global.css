@@ -63,7 +63,7 @@
   @layer components {
     .imageDivider {
       /* @apply overflow-hidden bg-fixed bg-center bg-cover aspect-[4/3]  mt-10 w-screen relative left-1/2 right-1/2 -mx-[50vw] md:aspect-[16/6] lg:aspect-[21/5] */
-      @apply overflow-hidden bg-fixed bg-center bg-cover aspect-[4/3]  mt-10 w-full  md:aspect-[16/6] lg:aspect-[21/5]
+      @apply overflow-hidden md:bg-fixed bg-center bg-cover aspect-[4/3]  mt-10 w-full  md:aspect-[16/6] lg:aspect-[21/5]
     }
 
   }

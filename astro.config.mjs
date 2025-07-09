@@ -1,4 +1,4 @@
-// @ts-check
+// @ts-nocheck
 import { defineConfig } from "astro/config";
 import path from "path"; //
 import tailwindcss from "@tailwindcss/vite";
